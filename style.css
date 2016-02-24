@@ -1,0 +1,46 @@
+.namesList {
+
+}
+
+button {
+	background-color: purple;
+	color: white;
+	height: 50px;
+	width: auto;
+	font-size: 1em;
+}
+
+button:active {
+	background-color: orange;
+}
+
+#names {
+	border: 1px solid purple;
+	width: 200px;
+	height: auto;
+}
+
+h1 {
+	color: orange;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-size: 24px;
+	color: purple;
+}
+
+#randomName1 {
+	background-color: orange;
+	color: purple;
+	font-size: 2em;
+	text-align: center;
+	width: 200px;
+	margin-top: 10px;
+}
+
+
+
