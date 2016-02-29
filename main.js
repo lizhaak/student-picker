@@ -1,10 +1,12 @@
 'use strict';
 var namesArray = [];
+var namesRandArray = [];
 
 document.getElementById('addName').addEventListener('click', function(){
 	var name = document.getElementById('names').value;
 	var separateNames = name.split(',');
 	namesArray.push.apply(namesArray, separateNames);
+	namesRandArray.push.apply(namesRandArray, separateNames);
 
 	for (var i = 0; i < namesArray.length; i++){
 		var nameSauce = namesArray[i];
@@ -18,7 +20,7 @@ document.getElementById('addName').addEventListener('click', function(){
 });
 
 document.getElementById('random').addEventListener('click', function(){
-	var randomName = namesArray[Math.floor(Math.random() * namesArray.length)];
+	var randomName = namesRandArray[Math.floor(Math.random() * namesRandArray.length)];
 	randomName1.innerHTML = randomName;
 });
 
